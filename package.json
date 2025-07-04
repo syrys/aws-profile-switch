@@ -1,0 +1,25 @@
+{
+  "name": "awsdps",
+  "description": "AWS Default Profile Switcher - helps you to simply and quickly switch between default aws profiles",
+  "version": "1.0.0",
+  "preferGlobal": true,
+  "author": "syrys",
+  "main": "dist/index.js",
+  "bin": {
+    "awsdps": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "deploy:local": "npm run build && npm i -g ."
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "@types/prompts": "^2.4.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "prompts": "^2.4.2"
+  }
+}
