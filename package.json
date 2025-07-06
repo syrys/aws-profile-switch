@@ -1,13 +1,23 @@
 {
   "name": "awsdps",
   "description": "AWS Default Profile Switcher - helps you to simply and quickly switch between default aws profiles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "preferGlobal": true,
   "author": "syrys",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syrys/aws-profile-switch.git"
+  },
   "main": "dist/index.js",
   "bin": {
     "awsdps": "dist/index.js"
   },
+  "keywords": [
+    "AWS",
+    "AWS CLI",
+    "Profile Switch"
+  ],
+  "license": "MIT",
   "scripts": {
     "build": "tsc",
     "start": "ts-node src/index.ts",
